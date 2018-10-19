@@ -32,7 +32,6 @@ namespace hw6
         public bool sosu(int num)
         {
             if (num <= 1) return false;
-            if (num == 2) return true;
 
             for(int i = 3; i <= num; i++)
             {
