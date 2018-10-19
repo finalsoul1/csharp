@@ -11,6 +11,7 @@ namespace hw1
         static void Main(string[] args)
         {
             // 1. 콤마로 구분해서 여러 숫자를 입력받아 합을 구하는 프로그램을 작성하세요.
+            Console.Write("여러숫자를 입력하세요 (,로 구분) : ");
 
             int[] iArr = Array.ConvertAll(
                         (Console.ReadLine()).Split(','),

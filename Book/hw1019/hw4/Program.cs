@@ -10,6 +10,12 @@ namespace hw4
     {
         static void Main(string[] args)
         {
+            /*
+            4. 아래와 같이 출력하는 프로그램을 작성하세요.
+            *
+            ***
+            *****
+            */
 
             for (int i = 1; i <= 5; i += 2)
             {

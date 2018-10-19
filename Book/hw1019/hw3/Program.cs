@@ -10,19 +10,20 @@ namespace hw3
     {
         static void Main(string[] args)
         {
+            // 3. 사용자로 부터 두수를 입력받아 변수에 넣고 변수값을 뒤짚어서 출력하는 프로그램 입니다.
+
             Stack num = new Stack();
 
-            Console.Write("정수 두개 입력 : ");
-
-            num.Push(int.Parse(Console.ReadLine()));
+            Console.Write("첫번째 정수 입력 : ");
             num.Push(int.Parse(Console.ReadLine()));
 
-            Console.WriteLine("{0} ", num.Pop());
-            Console.WriteLine("{0} ", num.Pop());
+            Console.Write("두번째 정수 입력 : ");
+            num.Push(int.Parse(Console.ReadLine()));
+
+            Console.WriteLine("팝 : {0}, 팝 : {1}", num.Pop(), num.Pop());
 
             ///////////////////////////////////////////////////////
 
-            Console.Write("정수 두개 입력 : ");
             int num1, num2, temp;
             Console.Write("\nEnter the First Number : ");
             num1 = int.Parse(Console.ReadLine());

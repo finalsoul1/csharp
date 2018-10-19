@@ -24,7 +24,7 @@ class Program
         _show += new EventHandler(Mouse);
 
         // Invoke the event. 
-        _show();
+        _show.Invoke();
     }
 
     static void Cat()

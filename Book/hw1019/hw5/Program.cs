@@ -18,7 +18,7 @@ namespace Program
         static void Main(string[] args)
         {
             int num, reverse = 0;
-            Console.WriteLine("Enter a Number : ");
+            Console.Write("Enter a Number : ");
             num = int.Parse(Console.ReadLine());
 
             string num2 = "";

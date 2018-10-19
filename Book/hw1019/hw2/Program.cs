@@ -10,6 +10,8 @@ namespace hw2
     {
         static void Main(string[] args)
         {
+            // 2. 하나의 숫자를 입력받아서 홀수/짝수를 판정하세요.
+
             Console.Write("정수 입력 : ");
 
             int num = int.Parse(Console.ReadLine());

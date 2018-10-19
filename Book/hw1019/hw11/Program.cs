@@ -50,9 +50,7 @@ class Program
         Console.WriteLine(func5.Invoke(2, 2));  // 4
         func6.Invoke();                         // 
         Console.WriteLine(func7.Invoke(1));     // 2
-        Console.WriteLine(func8.Invoke());      // 2
-
-        
+        Console.WriteLine(func8.Invoke());      // 2 
     }
 }
 

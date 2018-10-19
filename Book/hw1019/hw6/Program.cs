@@ -26,9 +26,7 @@ namespace hw6
                     Console.WriteLine(i);
                 }
             }
-
-            Console.WriteLine("결과 : {0}", sum);
-
+            Console.WriteLine("소수의 합 : {0}", sum);
         }
 
         public bool sosu(int num)

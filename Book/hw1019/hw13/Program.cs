@@ -1,4 +1,6 @@
-﻿using System;
+﻿// 13. 실행결과는? (먼저 예측하고 코딩해보세요.)
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 class Dog
