@@ -16,7 +16,7 @@ namespace hw6
 
             for (int i = 2; i <= num; i++)
             {
-                if (a.sosu(i) == true)
+                if (a.sosu(i))
                 {
                     sum += i;
                     Console.WriteLine(i);
