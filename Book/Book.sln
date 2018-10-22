@@ -109,6 +109,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p216 Monitor", "p216\p216 M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p218 Mutex", "p218\p218 Mutex.csproj", "{6145DACC-C3CE-4743-BF7A-D630169109CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p220", "p220\p220.csproj", "{9ED91531-6546-4D55-922E-F925CCD6EC37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p232", "p232\p232.csproj", "{B9EC485B-7BF2-45CF-8735-7A203D0C16FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -327,6 +331,14 @@ Global
 		{6145DACC-C3CE-4743-BF7A-D630169109CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6145DACC-C3CE-4743-BF7A-D630169109CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6145DACC-C3CE-4743-BF7A-D630169109CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED91531-6546-4D55-922E-F925CCD6EC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED91531-6546-4D55-922E-F925CCD6EC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED91531-6546-4D55-922E-F925CCD6EC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED91531-6546-4D55-922E-F925CCD6EC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9EC485B-7BF2-45CF-8735-7A203D0C16FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EC485B-7BF2-45CF-8735-7A203D0C16FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EC485B-7BF2-45CF-8735-7A203D0C16FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9EC485B-7BF2-45CF-8735-7A203D0C16FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
