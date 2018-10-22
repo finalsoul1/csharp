@@ -21,7 +21,6 @@ class ClientHadler
 
     public void chat()
     {
-        // 클라이언트의 데이터를 읽고, 쓰기 위한 스트림을 만든다.
         stream = new NetworkStream(socket);
         Encoding encode = Encoding.GetEncoding("utf-8");
 
@@ -60,7 +59,6 @@ class Server
 
             while (true)
             {
-                // 클라이언트가 들어올때 바로 동작
                 clientsocket = tcpListener.AcceptSocket();
 
                 ClientHadler cHandler = new ClientHadler(clientsocket);
