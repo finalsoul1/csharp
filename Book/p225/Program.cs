@@ -62,7 +62,7 @@ class Server
                 clientsocket = tcpListener.AcceptSocket();
 
                 ClientHadler cHandler = new ClientHadler(clientsocket);
-                Thread t = new Thread(new ThreadStart(cHandler.chat));
+                Thread t = new Thread(cHandler.chat);
                 t.Start();
             }
         }

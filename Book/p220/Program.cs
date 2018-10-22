@@ -49,7 +49,7 @@ class TcpClientTest
 
             ServerHandler serverHandler = new ServerHandler(reader);
 
-            Thread t = new Thread(new ThreadStart(serverHandler.read));
+            Thread t = new Thread(serverHandler.read);
             t.Start();
 
             string dataToSend = Console.ReadLine();
