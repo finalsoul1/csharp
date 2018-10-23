@@ -36,6 +36,16 @@ namespace ListVieww
                 item.SubItems.Add(act.year.ToString());
                 listView1.Items.Add(item);
             }
+
+            ColumnHeader name = new ColumnHeader();
+            name.Text = "Name";
+            name.Width = -1;
+
+            ColumnHeader year = new ColumnHeader();
+            year.Text = "Year";
+
+            listView1.Columns.AddRange(new ColumnHeader[] { name, year });
+
         }
 
         private void listView1_Click(object sender, EventArgs e)
@@ -58,6 +68,11 @@ namespace ListVieww
             {
                 lv.Sorting = SortOrder.Ascending;
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     public class Actress
