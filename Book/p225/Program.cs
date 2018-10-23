@@ -28,7 +28,7 @@ class ClientHadler
 
         while (true)
         {
-            string str = reader.ReadLine();
+            string str = reader.ReadLine().Trim();
             Console.WriteLine(str);
 
             foreach(Socket sok in Server.list)
@@ -36,6 +36,7 @@ class ClientHadler
                 stream = new NetworkStream(sok);
                 writer = new StreamWriter(stream, encode) { AutoFlush = true };
                 writer.WriteLine(str);
+                writer = null;
             }
         }
     }
@@ -52,7 +53,7 @@ class Server
 
         try
         {
-            IPAddress ipAd = IPAddress.Parse("127.0.0.1");
+            IPAddress ipAd = IPAddress.Parse("192.168.0.31");
 
             tcpListener = new TcpListener(ipAd, 5001);
             tcpListener.Start();

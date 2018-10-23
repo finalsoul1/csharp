@@ -21,7 +21,8 @@ class ServerHandler
         {
             while (true)
             {
-                Console.WriteLine(reader.ReadLine());
+                string str = reader.ReadLine().Trim();
+                Console.WriteLine(str);
             }
         }
         catch(Exception e)
@@ -40,7 +41,7 @@ class TcpClientTest
         {
 
             client = new TcpClient();
-            client.Connect("192.168.0.31", 5001);
+            client.Connect("192.168.0.15", 5001);
             NetworkStream stream = client.GetStream();
             Encoding encode = System.Text.Encoding.GetEncoding("utf-8");
 
