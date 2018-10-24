@@ -131,7 +131,7 @@ namespace ChatServer
         public void ChatProcess()
         {
             Form1.count++;
-            while(true)
+            while (true)
             {
                 try
                 {
@@ -146,19 +146,20 @@ namespace ChatServer
                         ArrayList remove_soketArray = new ArrayList();
                         lock (Form1.soketArray)
                         {
-                            foreach(Socket soc in Form1.soketArray)
+                            foreach (Socket soc in Form1.soketArray)
                             {
                                 NetworkStream stream = 
                                     new NetworkStream(soc);
                                 stream.Write(
                                     bytSand_Data, 0, bytSand_Data.Length);
                             }
-                            Form1.count--;
+                            
                         }
                     }
                 }
                 catch (System.Exception e)
                 {
+                    Form1.count--;
                     MessageBox.Show(e.ToString());
                     Form1.soketArray.Remove(sktClient);
                     break;
