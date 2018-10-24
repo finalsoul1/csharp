@@ -111,7 +111,7 @@ namespace ChatClient
             try
             {
                 //보낼 데이터를 읽어 Default 형식의 바이트 스트림으로 변환 해서 전송
-                string dataToSend = lstMessage + "\r\n";
+                string dataToSend = lstMessage + "\t<" + DateTime.Now.ToString("HH시mm분ss초") + ">\r\n";
                 byte[] data = Encoding.Default.GetBytes(dataToSend);
                 ntwStream.Write(data, 0, data.Length);
             }
