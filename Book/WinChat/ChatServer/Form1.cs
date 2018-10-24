@@ -27,7 +27,6 @@ namespace ChatServer
 
         TcpListener lit_Listener = new TcpListener(IPAddress.Parse("192.168.0.31"), 5001);
         public static ArrayList soketArray = new ArrayList();
-        public static int count = 0;
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -47,6 +46,7 @@ namespace ChatServer
                 cmd_Start.Text = "Server Stop";
                 Thread trd_join = new Thread(Join);
                 trd_join.Start();
+                cmd_Start.BackColor = Color.Red;
             }
             else
             {
@@ -60,7 +60,7 @@ namespace ChatServer
                 Ibl_Message.Tag = "Stop";
                 cmd_Start.Text = "Server Start";
                 label1.Text = "0명 참가중";
-                count = 0;
+                cmd_Start.BackColor = Color.CornflowerBlue;
             }
             
         }
@@ -102,7 +102,7 @@ namespace ChatServer
         {
             while (true)
             {
-                string str = count + "명 참가중";
+                string str = soketArray.Count + "명 참가중";
                 label1.Text = str;
             }
         }
@@ -130,7 +130,6 @@ namespace ChatServer
         }
         public void ChatProcess()
         {
-            Form1.count++;
             while (true)
             {
                 try
@@ -138,7 +137,7 @@ namespace ChatServer
                     string lstMessage = strReader.ReadLine();
                     if(lstMessage != null && lstMessage != "")
                     {
-                        form1.SetText(lstMessage + "\r\n");
+                        form1.SetText(lstMessage + "\t<" + DateTime.Now.ToString("HH시mm분ss초") + ">\r\n" );
 
                         byte[] bytSand_Data = 
                             Encoding.Default.GetBytes
@@ -159,7 +158,6 @@ namespace ChatServer
                 }
                 catch (System.Exception e)
                 {
-                    Form1.count--;
                     MessageBox.Show(e.ToString());
                     Form1.soketArray.Remove(sktClient);
                     break;

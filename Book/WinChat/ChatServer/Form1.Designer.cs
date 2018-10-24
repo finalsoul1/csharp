@@ -36,22 +36,23 @@
             // 
             // cmd_Start
             // 
+            this.cmd_Start.BackColor = System.Drawing.Color.CornflowerBlue;
             this.cmd_Start.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cmd_Start.Location = new System.Drawing.Point(24, 18);
             this.cmd_Start.Name = "cmd_Start";
             this.cmd_Start.Size = new System.Drawing.Size(131, 63);
             this.cmd_Start.TabIndex = 0;
             this.cmd_Start.Text = "Server Start";
-            this.cmd_Start.UseVisualStyleBackColor = true;
+            this.cmd_Start.UseVisualStyleBackColor = false;
             this.cmd_Start.Click += new System.EventHandler(this.cmd_Start_Click);
             // 
             // Ibl_Message
             // 
             this.Ibl_Message.AutoSize = true;
-            this.Ibl_Message.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Ibl_Message.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Ibl_Message.Location = new System.Drawing.Point(186, 39);
             this.Ibl_Message.Name = "Ibl_Message";
-            this.Ibl_Message.Size = new System.Drawing.Size(77, 16);
+            this.Ibl_Message.Size = new System.Drawing.Size(82, 16);
             this.Ibl_Message.TabIndex = 1;
             this.Ibl_Message.Tag = "Stop";
             this.Ibl_Message.Text = "서버 닫힘";
