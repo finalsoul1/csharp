@@ -135,9 +135,9 @@ namespace ChatServer
                 try
                 {
                     string lstMessage = strReader.ReadLine();
-                    if(lstMessage != null && lstMessage != "")
+                    if(strReader != null && (lstMessage != null && lstMessage != ""))
                     {
-                        form1.SetText(lstMessage + "\t<" + DateTime.Now.ToString("HH시mm분ss초") + ">\r\n" );
+                        form1.SetText(lstMessage + "\r\n" );
 
                         byte[] bytSand_Data = 
                             Encoding.Default.GetBytes

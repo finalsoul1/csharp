@@ -159,7 +159,7 @@ namespace ChatClient
                 {
                     //문자열을 받음
                     string lstMessage = strReader.ReadLine();
-                    if (lstMessage != null && lstMessage != "")
+                    if (strReader != null && (lstMessage != null && lstMessage != ""))
                     {
                         //SetText의 델리게이트를 이용하여 서버에서 넘어오는 메시지를쓴다.
                          form1.SetText(lstMessage + "\r\n");
