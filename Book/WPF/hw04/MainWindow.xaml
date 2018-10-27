@@ -45,7 +45,8 @@
             <!--</SnippetBindingSource>-->
             <Label>The name you entered:</Label>
             <!--<SnippetBDO1>-->
-            <TextBlock Text="{Binding Source={StaticResource myDataSource}, Path=PersonName}"/>
+            <TextBlock Text="{Binding Source={StaticResource myDataSource}, 
+                Path=PersonName}"/>
             <!--</SnippetBDO1>-->
         </DockPanel>
     </Border>
