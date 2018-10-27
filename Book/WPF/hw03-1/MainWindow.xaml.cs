@@ -7,7 +7,6 @@ namespace hw03_1
         {
             InitializeComponent();
         }
-
         private void MyButton_Click(object sender, RoutedEventArgs e)
         {
             //CarDependency" 라는 리소스 검색
@@ -15,7 +14,6 @@ namespace hw03_1
             MessageBox.Show(dpSample.MyCar);
         }
     }
-
     public class CarDependencyProperty : DependencyObject
     {
         //Register Dependency Property  

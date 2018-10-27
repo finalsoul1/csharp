@@ -24,4 +24,5 @@
         <Button Name="MyButton" Content="Click Me!" Height="25" 
                 Click="MyButton_Click" Width="150" Grid.Row="1" />
     </Grid>
+    
 </Window>
